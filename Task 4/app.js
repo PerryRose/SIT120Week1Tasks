@@ -3,7 +3,7 @@ const todoList = {
     return {
       newTodo: '',
       todoList: [
-        { todo: 'Some damn homework', completed: false }
+        { todo: 'Some homework', completed: false }
       ]
     }
   },
