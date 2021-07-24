@@ -1,15 +1,25 @@
-Vue.component('todo-item', {
-    props: ['todo'],
-    template: '<li>{{ todo.class }} - A{{ todo.id + 1 }}: {{ todo.assignment }}</li>'
-  })
-  
-  var app = new Vue({
-    el: '#todo-app',
-    data: {
-      assignmentsToDo: [
-        { id: 0, class: "SIT120", assignment: 'Project Idea' },
-        { id: 1, class: "SIT120", assignment: 'Portfolio' },
-        { id: 2, class: "SIT120", assignment: 'Final Project' }
+const todoList = {
+  data() {
+    return {
+      newTodo: '',
+      todoList: [
+        { todo: 'Some damn homework', completed: false }
       ]
     }
-  })
+  },
+  methods: {
+    addTask() {
+      this.todoList.push({todo: this.newTodo, completed: false});
+      this.newTodo = '';
+    }
+  }
+}
+
+const app = Vue.createApp(todoList);
+
+app.component('todo-item', {
+  props: ['todo'],
+  template: `<li>Task: {{ todo.todo }} - Completed: {{ todo.completed }} <input type="checkbox" v-model="todo.completed"></li>`
+});
+
+app.mount('#todo-task')
