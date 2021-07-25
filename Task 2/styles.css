@@ -1,0 +1,98 @@
+.container {
+    background-color: rgb(226, 226, 226);
+}
+
+.header {
+    background-color: #3c4a60;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: solid;
+    border-color: #a0aec4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.header h1 {
+    color: white;
+    padding-left: 0.5em;
+    margin: 0;
+}
+
+.header h1:hover {
+    color: #a0aec4;
+}
+
+.banner {
+    background-color: dimgrey;
+}
+
+.banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    max-width: 100%;
+}
+
+.content {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    background-color: white;
+}
+
+.content h1 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.form {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: grey;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.input-no-hover {
+    text-align:center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.input:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.input-label {
+    color: white;
+    font-size: large;
+    padding-right: 1em;
+}
+
+.input input:focus {
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: #e98b10;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #eec48e;
+}
+

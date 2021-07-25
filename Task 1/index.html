@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Check-In</title>
+</head>
+<body>
+    <div class="header">
+        <h1 id="header">COVID-19 Check-In</h1>
+    </div>
+
+    <div class="container">
+        <div class="banner">
+            <img src="https://www.bayside.vic.gov.au/sites/default/files/styles/event_2_0_slider_-_1024x422/public/business_and_commerce/dpc_20001_check-in_social.jpg?itok=XbWomvM5"
+            width=50%/>
+        </div>
+
+        <div class="content">
+            <h1>Please Check In</h1>
+            <div class="form">
+                <form>
+                    <!--First Name-->
+                    <div class="input">
+                        <label class="input-label" for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <hr>
+                    <!--Last Name-->
+                    <div class="input">
+                        <label class="input-label" for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    <hr>
+                    <!--Phone Number-->
+                    <div class="input">
+                        <label class="input-label" for="number">Phone Number:</label>
+                        <input type="text" id="number" name="number">
+                    </div>
+                    <hr>
+                    <!--Symptoms-->
+                    <div class="input" style="display:inline-table;">
+                        <input type="checkbox" id="symptoms" name="symptoms" value="Symptoms">
+                        <label class="input-label" for="symptoms">I do not have any 
+                            <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/what-you-need-to-know-about-coronavirus-covid-19#symptoms">
+                                COVID-19 symptoms
+                            </a>
+                        </label>
+                    </div>
+                    <hr>
+                    <!--Close Contact-->
+                    <div class="input" style="display:inline-table;">
+                        <input type="checkbox" id="close-contact" name="close-contact" value="Close-Contact">
+                        <label class="input-label" for="close-contact">
+                            I have not been in close contact with somebody with COVID-19
+                        </label>
+                    </div>
+                    <hr>
+                    <!--Agreement-->
+                    <div class="input" style="grid-template-columns: none;">
+                        <agreement class="input-label">
+                            By submitting this form, you accept that the information you have provided is honest and accurate.
+                        </agreement>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="input-no-hover">
+                        <button type="button" id="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

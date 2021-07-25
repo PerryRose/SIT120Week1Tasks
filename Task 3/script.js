@@ -7,8 +7,8 @@ let scores = [12, 50, 25, 40, 50];
 let scoresString = "Student Results are: ";
 let resultsString = "";
 
-// Set up scores label
-scores.forEach((x, i) => scoresString += i !== scores.length - 1 ? x + ', ' : x + '.') // Full stop if last number, comma if not.
+// Set up scores label - Full stop if last number, comma if not.
+scores.forEach((x, i) => scoresString += i !== scores.length - 1 ? x + ', ' : x + '.') 
 scoresLabel.textContent = scoresString;
 
 // Add event listener
